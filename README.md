@@ -1,10 +1,8 @@
 # TrabalhoViel
 Bibliotecas
-
 	O código começa importando algumas bibliotecas, a opneCV no código cv2 que irá permitir a manipulação de imagens feita pelo código, a Numpy que é usada para a manipulação de arrays multidimensionais e por fim a biblioteca matplotib junto a pyplot que não chega a ser usado no código.
 
 Conversão de imagem RGB em imagem Grayscale
-
 	Esse parte do código começa pegando uma imagem e depois a mostrando como teste mas sua verdadeira função é transformar uma imagem colorida em formato RGB para uma imagem Grayscale uma especie de coloração/filtro que consiste na imagem em diferentes tons de cinza. RGB ou Red, Green, Blue (Vermelho, Verde, Azul) é uma das formas de armazenar as cores de uma imagem, nesse código a imagem tem cada uma das três cores separadas criando três arrays diferentes, cada array tem seus valores em cada posição represantando os pixels multiplicado e depois somados entre sí conforme uma fórmula expecífica, no fim formando novamente uma única array com o uso do numpy para criá-la, só que agora em tons de cinza.
 	O comando "split(img)", é responsável por dividir a imagem "img" em três imagens separadas, cada uma responsável por uma cor primaria. A variável "img_grayscale_pondered" é criada para armazenar as imagens separadas com valores modificados para tons de cinza. para isso acontecer é utilizada uma fórmula para ponderar os valores de cada canal de cor da imagem. Com o comando "np.array()" e o parâmetro "dtype=np.uint8", é possível converter a imagem em um array de valores inteiros de 8 bits, que representam as cores da imagem em uma faixa de 0 a 255, garantindo que os valores das cores estejam dentro de um intervalo permitido. Por fim, será possível exibir a imagem alterada com a função "cv2_imshow()".
 
